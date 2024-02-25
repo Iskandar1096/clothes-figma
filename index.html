@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header" style="background-image: url(./img/head.png);
+    width: 100%;
+    height: 700px;">
+          <div class="special-offer">
+              <p class="hed-p hp1 gt-cin-tr">Get 25% off buying the entire capsule collection</p>
+              <p class="hed-p hp2 gt-cin-tr">Subscribe to us and get 15% off your first order</p>
+          </div>
+        
+        <nav class="navbar">
+          <div class="container-fluid" style="font-size: 14px;background-image: #ffffff00;">
+            <a class="navbar-brand"> <img src="./img/logo.png" alt="" style="width: 100px;height: 60px;"></a>
+            <ul class="nav justify-content-center">
+              <li class="nav-item gt-cin-tr">
+                <!-- <a class="" href="#" onclick="openModalWindow">Shop +</a>Кнопка-триггер модального окна -->
+                <button type="button" class="nav-link btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Shop +
+                </button>
+                
+                <!-- Модальное окно -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" style="width: 1440px;">
+                    <div class="modal-content" style="background-color: #50735F;height: 700px; position: relative;">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;margin: 20px 103px;"><img src="./img/shop-logo.png" alt=""></h1>
+                        <div data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть" ></button>
+                      </div>
+                      </div>
+
+                      <div class="modal-body">
+                        <ul>
+                          <li onclick="topsShop()">
+                            <span class="shop-li shop-tops li-shop-val">Tops</span>
+                            <div class="top-li-shop" style="position: relative;">
+                              <img src="./img/arrow-right.png" alt="" class="arrow-right-shop arrow-right-shop1">
+                              <ul class="ul-shop1">
+                                <li class="text-li-shop li-shop-val">SHIRTS</li>
+                                <li class="text-li-shop li-shop-val">T-SHIRTS</li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li onclick="bottomsShop()">
+                            <span class="shop-li shop-bottoms li-shop-val">Bottoms</span>
+                            <div class="bottom-li-shop" style="position: relative;">
+                              <img src="./img/arrow-right.png" alt="" class="arrow-right-shop arrow-right-shop2">
+                              <ul  class="ul-shop2">
+                                <li class="text-li-shop li-shop-val">PANTS</li>
+                                <li class="text-li-shop li-shop-val">SHORTS</li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><span class="shop-li li-shop-val shop-roompers">Roompers</span></li>
+                          <li><span class="shop-li li-shop-val shop-hats">Hats</span></li>
+                          <li><span class="shop-li li-shop-val shop-shop-all">Shop all<span class="shop-collections">collections</span></span></li>
+                        </ul>
+                        <p class="delivery-shop">Delivery & return</p>
+                        <p class="contacts-shop">Contacts</p>
+                        <img src="./img/tops-shop.png" alt="" class="img-shop">
+                        <img src="./img/leaf-shop.png" alt="" class="leaf-shop">
+                        <p class="shirts-and-tees">Shirts and tees</p>
+                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Понял</button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item gt-cin-tr">
+                <a class="nav-link" href="#">Our team</a>
+              </li>
+              <li class="nav-item gt-cin-tr">
+                <a class="nav-link" href="#">Our impact</a>
+              </li>
+              <li class="nav-item gt-cin-tr">
+                <a class="nav-link">Gift card</a>
+              </li>
+              <li class="nav-item gt-cin-tr">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item gt-cin-tr">
+                  <a class="nav-link" href="#">Journal</a>
+                </li>
+                <li class="nav-item gt-cin-tr">
+                  <a class="nav-link">Contacts</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <img src="./img/seach.png" alt="" style="height: 15px;width: 15px;">
+              <input class="form-control me-2 sechp" type="search" placeholder="Search" aria-label="Поиск">
+              <p class="sechp gt-cin-tr" style="margin-right: 70px;">(CART 02)</p>
+            </form>
+          </div>
+        </nav>
+        <div class="hed-text">
+          <h4 class="treehouse gt-cin-tr">Treehouse:</h4>
+          <h1 class="little-clothes main-text lin-did-std">Little Clothes.</h1>
+          <h1 class="big-impact main-text lin-did-std">Big Impact.</h1>
+          <p class="hed-par gt-cin-tr">High-quality children's clothing, crafted with care from sustainable materials that are kind to the planet. These timeless styles are the perfect companions for your little adventurer, wherever their imagination takes them.</p>
+        </div>
+        <div class="hed-button">
+          <button type="button" class="btn hed-btn shop-now gt-cin-tr">SHOP NOW</button>
+          <button type="button" class="btn hed-btn arrow"><img src="./img/arrow-right.png" alt="" class="arrow-img"></button>
+        </div>
+        <div class="hed-bot-text">
+          <p class="bot-par buy-good gt-cin-tr">* Buy good, do good</p>
+          <p class="bot-par scroll gt-cin-tr">Scroll <img src="./img/arrow-bottom.png" alt=""></p>
+        </div>
+      </div>
+  </header>    
+  <main class="text-block" style='margin-bottom: 100px;'>
+    <div class="container">
+      <div class="card1">
+        <h4 class="card1-welcome gt-cin-tr">welcome</h4>
+        <h2 class="card1-treehouse lin-did-std">Hi, meet TreeHouse.</h2>
+        <p class="card1-mindfully gt-cin-tr">Mindfully crafted gender-neutral children's clothing focused on your little one and designed with great care for our planet and the people on it.</p>
+        <div class="card1-buttons">
+          <button type="button" class="btn hed-btn read-more gt-cin-tr">READ MORE</button>
+          <button type="button" class="btn hed-btn arrow card1-arrow"><img src="./img/arrow-right-2.png" alt="" class="arrow-img1"></button>
+        </div>
+        <img src="./img/leaf-img-card1.png" alt="" class="child-img-card1">
+        <img src="./img/child-img-card1.png" alt="" class="leaf-img-card1">
+        <img src="./img/leaf.png" alt="" class="leaf">
+        <img src="./img/TreeHouse.png" alt="" class="TreeHouse-img">
+      </div>
+      <div class="card2">
+        <h4 class="card2-our-care gt-cin-tr">Our care</h4>
+        <h2 class="card2-prioritize lin-did-std">We prioritize your peace of mind.</h2>
+        <div class="list-card2">
+          <div class="li-card2-1 li-card2">
+            <h4 class="li-card2-h4 gt-cin-tr"><span class="card2-list">1</span> saving your time </h4>
+            <div class="li-card2-p gt-cin-tr">Each item in our collection seamlessly matches the next. Invest in a few pieces or the entire line for a season's worth of clothing options, designed to last and be loved by others once your little one has grown.</div>
+          </div>
+          <div class="li-card2-2 li-card2">
+            <h4 class="li-card2-h4 gt-cin-tr"><span class="card2-list">2</span> ethical manufacturing</h4>
+            <div class="li-card2-p gt-cin-tr">Our commitment to ethical production isn’t just rhetoric. We place the welfare of workers and the environment at the forefront of our decision making. Always.
+            </div>
+          </div>
+          <div class="li-card2-3 li-card2">
+            <h4 class="li-card2-h4 gt-cin-tr"><span class="card2-list">3</span> The highest quality</h4>
+            <div class="li-card2-p gt-cin-tr">We use only he highest quality sustainable fabrics, including GOTS-certified organic cotton and OEKO-TEX    STANDARD 100 linen, to ensure your child's delicate skin is cared for.</div>
+          </div>
+          <div class="li-card2-4 li-card2">
+            <h4 class="li-card2-h4 gt-cin-tr"><span class="card2-list">4</span> womAn owned brand</h4>
+            <div class="li-card2-p gt-cin-tr">When you choose us, you're supporting an ethical and sustainable small business owned by a woman. We don't just talk the talk, we walk the walk.</div>
+          </div>
+        </div>
+        <img src="./img/childs-card2.png" alt="" class="childs-card2">
+        <img src="./img/planet-card2.png" alt="" class="planet-card2">
+        <img src="./img/art-girl-card2.png" alt="" class="art-girl-card2">
+        <img src="./img/magic-stick.png" alt="" class="magic-stick">
+      </div>
+    </div>
+  </main>
+  <main>
+    <div class="container">
+      <h4 class="shopping gt-cin-tr">let’s make shopping</h4>
+      <h2 class="looking-for lin-did-std">What are you looking for?</h2>
+      <img src="./img/tops-category.png" alt="" class="category-main2">
+      <ul class="ul-main2" style="display: flex;justify-content:center">
+        <li class="li-main2 li-active-main2 gt-cin-tr">TOPS</li>
+        <li class="li-main2 gt-cin-tr">BOTTOMS</li>
+        <li class="li-main2 gt-cin-tr">ROOMPERS</li>
+        <li class="li-main2 gt-cin-tr">HATS</li>
+        <li class="li-main2 gt-cin-tr">ALL COLLECTION</li>
+      </ul>
+      <img src="./img/leaf-main3.png" alt="" class="leaf-main3">
+    </div>
+  </main>
+
+  <main>
+    <div class="container">
+      <div class="card1-main2">
+        <img src="./img/lollipops.png" alt=""class="lollipops">
+        <h2 class="off-25">25% off</h2>
+        <p class="save-yourself gt-cin-tr">Save yourself the headache of endless shopping with our Capsule Collection. Buy all 14 pieces, save 25%, and enjoy endless outfit options, dressing your littles in no time!</p>
+        <div class="main3-button">
+          <button type="button" class="btn hed-btn shop-now gt-cin-tr">SHOP NOW</button>
+          <button type="button" class="btn hed-btn arrow"><img src="./img/arrow-right.png" alt="" class="arrow-img"></button>
+        </div>
+        <img src="./img/main3-dresses.png" alt="" class="dresses">
+      </div>
+      <div class="card2-main2">
+        <img src="./img/main3-children.png" alt="" class="main3-children">
+        <span class="asterisk">*</span>
+        <p class="entire-collection gt-cin-tr">THE ENTIRE COLLECTION HAS A GENDER-NEUTRAL STYLE AND EVERY ITEM MATCHES PERFECTLY WITH THE NEXT.</p>
+      </div>
+    </div>
+  </main>
+
+  <main>
+    <div class="container">
+      <img src="./img/human-main4.png" alt="" class="human-main4">
+      <h2 class="buy-less lin-did-std">BUY LESS, BUY BETTER</h2>
+      <h4></h4>
+      <h3></h3>
+
+
+      
+
+      
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+

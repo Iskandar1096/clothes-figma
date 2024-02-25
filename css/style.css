@@ -1,0 +1,757 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    height: 6847px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: DidotLTStd-Roman;
+    src: url("/fonts/DidotLTStd-Roman.ttf");
+  }
+  
+@font-face {
+    font-family: GT-Cinetype-Regular;
+    src: url("/fonts/GT-Cinetype-Regular.ttf");
+  }
+  
+@font-face {
+    font-family: Northwell;
+    src: url("/fonts/Northwell.ttf");
+  }
+
+
+.gt-cin-tr{
+    font-family: "GT-Cinetype-Regular";
+}
+.lin-did-std{
+    font-family: "DidotLTStd-Roman";
+}
+
+.special-offer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+    background: #50735F;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 16px 0;
+}
+
+.hp1{
+    padding-right: 12px;
+    border-right: 1px solid #fff;
+}
+
+
+.hp2{
+    padding-left: 12px;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.header{
+    background-image: url(./img/head.png);
+    width: 100%;
+    height: 700px;
+}
+.me-2::placeholder{
+    color: #fff;
+}
+.navbar{
+    padding: 0;
+}
+
+.sechp{
+    height: 14px;
+    width: 80px;
+    font-size: 14px;
+    padding: 0;
+    border: none;
+    background: #ffffff00;
+    color: #fff;
+}
+
+.container{
+    --bs-gutter-x: 0;
+}
+
+.treehouse{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 72px;
+    margin-left: 700px;
+}
+.main-text{
+    color: #fff;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.little-clothes{
+    margin-left: 737px;
+    margin-top: 16px;
+}
+
+.big-impact{
+    margin-top: 4px;
+    margin-left: 631px;
+}
+
+.hed-par{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 740px;
+    margin-top: 19.6px;
+    width: 314px;
+}
+
+.hed-btn{
+    color: #fff;
+    background: #C58A46;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+}
+.shop-now{
+    padding: 18px 48px;
+}
+
+.hed-button{
+    margin-top: 48px;
+    margin-left: 740px;
+}
+.arrow{
+    height: 55px;
+    width: 55px;
+    /* padding-top: 5px; */
+}
+.arrow-img{
+    height: 35px;
+    width: 35px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.btn:active{
+    background: #C58A46;
+}
+.bot-par{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+}
+
+.hed-bot-text{
+    position: relative;
+}
+.buy-good{
+    bottom: -80px;
+    left: 103px;
+}
+.scroll{
+    bottom: -80px;
+    right: 101px;
+}
+
+.card1{
+    width: 280px;
+}
+
+.read-more{
+    padding: 18px 48px;
+    border: 2px solid #50735F;
+    background: #0000;
+    color: #50735F;
+}
+.card1-arrow{
+    padding: 13px 13px;
+    border: 2px solid #50735F;
+    background: #0000;
+    color: #50735F;
+}
+
+.arrow-img1{
+    height: 18px;
+    width:  18px;
+    padding-top: 5px;
+
+}
+.card1-welcome{
+    Width:66px;
+    Height:14px;
+    position: absolute;
+    Top:910px;
+    Left:952px;
+    font-weight: 400;
+    font-size:14px;
+    line-height:14px;
+    color: #50735F;
+}
+.card1-treehouse{
+    Width:242px;
+    Height:96px;
+    position: absolute;
+    Top:940px;
+    Left:952px;
+    font-weight:400;
+    font-size:48px;
+    line-height:48px;
+    color: #50735F;
+}
+
+.card1-mindfully{
+    Width:279px;
+    Height:80px;
+    position: absolute;
+    Top:1052px;
+    Left:952px;
+    font-weight:400;
+    font-size:14px;
+    line-height:19.6px;
+    color: #50735F;
+}
+
+.card1-buttons{
+    position: absolute;
+    Top:1180px;
+    Left:945px;
+}
+
+.child-img-card1{
+    Width:360px;
+    Height:405px;
+    position: absolute;
+    Top:866px;
+    Left:551.73px;
+}
+
+.leaf-img-card1{
+    Width:173px;
+    Height:241px;
+    position: absolute;
+    Top:1089px;
+    Left:422px;
+}
+
+.TreeHouse-img{
+    Width:174px;
+    Height:72.05px;
+    position: absolute;
+    Top:1290px;
+    Left:461.33px;
+}
+
+.leaf{
+    /* Width:150px;
+    Height:263.27px; */
+    position: absolute;
+    Top:934.38px;
+    Left:388.97px;
+    z-index: -1;
+}
+
+
+.card2-our-care{
+    Width:68px;
+    Height:14px;
+    position: absolute;
+    Top:1536px;
+    Left:103px;
+    font-weight:400;
+    font-size: 14px;
+    line-height:14px;
+    color: #50735F;
+}
+
+.card2-prioritize{
+    Width:425px;
+    Height:96px;
+    position: absolute;
+    color: #50735F;
+    Top:1566px;
+    Left:103px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.card2-list{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: "Northwell";
+}
+
+.li-card2-h4{
+    font-weight: 400;
+    font-size:20px;
+    line-height: 40px;
+    color: #50735F;
+}
+
+.li-card2-p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height:19.6px;
+    color: #50735F;
+    width: 360px;
+}
+
+.li-card2{
+    position: absolute;
+}
+
+.li-card2-1{
+    top:1702px;
+    left:122px;
+}
+
+.li-card2-2{
+    top:1850px;
+    left:134px;
+}
+.li-card2-3{
+    top:2061px;
+    left:978px;
+}
+
+.li-card2-4{
+    top:2209px;
+    left:979px;
+}
+
+.magic-stick{
+    width: 112.62px;
+    height: 113px;
+    position: absolute;
+    top: 1443px;
+    left: 1218.92px;
+}
+
+.childs-card2{
+    position: absolute;
+    Width:597px;
+    Height:485px;
+    Top:1536px;
+    Left:740px;
+}
+.planet-card2{
+    position: absolute;
+    Width:214px;
+    Height:248px;
+    Top:2072px;
+    Left:382px;
+}
+.art-girl-card2{
+    position: absolute;
+    z-index: -1;
+    Top:2108px;
+    Left:229px;
+}
+
+.shopping{
+    position: absolute;
+    Top:2480px;
+    Left:646px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #50735F;
+}
+
+.looking-for{
+    position: absolute;
+    Top: 2510px;
+    Left: 451px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: #50735F;
+}
+
+.category-main2{
+    Width:1234px;
+    Height:540px;
+    position: absolute;
+    Top:2603px;
+    Left:103px;
+}
+
+.ul-main2{
+    position: absolute;
+    Top: 3174.68px;
+    Left: 375px;
+}
+
+.li-main2{
+    margin-right: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #50735F;
+}
+
+.leaf-main3{
+    /* width: 41.16px;
+    height: 164.84px; */
+    position: absolute;
+    top: 2570px;
+    left: 1150px;
+    /* angle: -99.09 deg; */
+}
+
+.li-active-main2{
+    color: #C58A46;
+    border-radius: 50%;
+    margin-top: -10px;
+    padding: 9px;
+    border: 3px solid #C58A46;
+}
+
+.card1-main2{
+    Width:720px;
+    Height:560px;
+    position: absolute;
+    Top:3374px;
+    background: #ADBBC4;
+}
+
+.lollipops{
+    width: 105.15px;
+    height: 76px;
+    margin: 38px 0 30px 300px;
+    /* position: absolute; */
+    /* top: 3412px;
+    left: 307px; */
+
+}
+
+.off-25{
+    /* width: 168px;
+    height: 64px;
+    top: 3517px; */
+    position: absolute;
+    left: 276px;
+    font-family: Northwell;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.save-yourself{
+    margin-top: 90px;
+    width: 314px;
+    height: 80px;
+    position: absolute;
+    left: 203px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.main3-button{
+    position: absolute;
+    top: 347px;
+    left: 250px;
+}
+
+.dresses{
+    Width:280px;
+    Height:256px;
+    position: absolute;
+    top: 453px;
+    left: 220px;
+}
+
+.main3-children{
+    width: 720px;
+    height: 560px;
+    position: absolute;
+    top: 3374px;
+    left: 720px;
+}
+
+.entire-collection{
+    width: 398px;
+    height: 36px;
+    position: absolute;
+    top: 3959px;
+    left: 767px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.asterisk{
+    width: 37px;
+    height: 74px;
+    position: absolute;
+    top: 3958px;
+    left: 726px;
+    font-family: Northwell;
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 140px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C58A46;
+}
+
+.human-main4{
+    width: 152px;
+    height: 149.14px;
+    position: absolute;
+    top: 4243px;
+    left: 644px;
+}
+
+.buy-less{
+    /* width: 1190px; */
+    height: 100px;
+    position: absolute;
+    top: 4379px;
+    text-wrap: nowrap;
+    margin-left: 225px;
+    /* left: 250px; */
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #50735F;
+}
+.shop-li{
+    font-family: DidotLTStd-Roman;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.modal{
+    --bs-modal-width: none;
+}
+.shop-tops{
+    position: absolute;
+    left: 103px;
+
+}
+.shop-bottoms{
+    position: absolute;
+    top: 98px;
+    left: 103px;
+}
+.shop-roompers{
+    position: absolute;
+    top: 172px;
+    left: 103px;
+}
+.shop-hats{
+    position: absolute;
+    top: 250px;
+    left: 103px;
+}
+.shop-shop-all{
+    position: absolute;
+    top: 334px;
+    left: 103px;
+}
+.modal-header{
+    border-bottom: none;
+}
+
+.shop-collections{
+    font-family: GT-Cinetype-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 8px;
+}
+.btn-close{
+    position: absolute;
+    right: 103px;
+    top: 40px;
+}
+
+.img-shop{
+    width: 491px;
+    height: 422px;
+    position: absolute;
+    top: -25px;
+    left: 846px;
+    z-index: 2;
+}
+.leaf-shop{
+    /* width: 155px;
+    height: 169.75px; */
+    position: absolute;
+    top: 255px;
+    left: 690px;
+/* opacity: 0.6px
+angle: 30.73 deg */
+}
+
+.delivery-shop{
+    width: 113px;
+    height: 14px;
+    position: absolute;
+    top: 450px;
+    left: 103px;
+    font-family: GT-Cinetype-Regular;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.contacts-shop{
+    width: 58px;
+    height: 14px;
+    position: absolute;
+    top: 450px;
+    left: 270px;
+    font-family: GT-Cinetype-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.shirts-and-tees{
+    width: 100px;
+    height: 14px;
+    position: absolute;
+    top: 430px;
+    left: 856px;
+    font-family: GT-Cinetype-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;    
+    color: #fff;
+}
+.text-li-shop{
+    font-family: GT-Cinetype-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.arrow-right-shop{
+    width: 45px;
+    height: 35px;
+}
+
+.arrow-right-shop1{
+    position: absolute;
+    top: 5px;
+    left: 250px;
+}
+
+.arrow-right-shop2{
+    position: absolute;
+    top: 85px;
+    left: 250px;
+}
+
+.ul-shop1{
+    position: absolute;
+    top: 5px;
+    left: 400px;
+}
+
+.ul-shop2{
+    position: absolute;
+    top: 85px;
+    left: 400px;
+}
+
+
+
+.text-li-shop{
+    padding: 5px;
+}
+
+.top-li-shop{
+    overflow: hidden;
+}
+
+.bottom-li-shop{
+    overflow: hidden;
+}
+
+
+
+
