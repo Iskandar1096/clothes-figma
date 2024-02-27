@@ -29,6 +29,11 @@ body {
     line-height: 1;
     height: 6847px;
 }
+
+/* html{
+    overflow-x:hidden;
+} */
+
 ol, ul {
     list-style: none;
 }
@@ -572,7 +577,7 @@ table {
     position: absolute;
     top: 4379px;
     text-wrap: nowrap;
-    margin-left: 225px;
+    margin-left: 90px;
     /* left: 250px; */
     font-size: 100px;
     font-weight: 400;
@@ -777,8 +782,10 @@ angle: 30.73 deg */
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  padding: 44px 0;
+  /* width: 1440px; */
+  /* padding: 44px 0; */
   transition: all 0.25s ease-in;
+  /* overflow-x: hidden; */
 }
 
 .carousel-view .item-list {
@@ -789,7 +796,7 @@ angle: 30.73 deg */
   scroll-behavior: smooth;
   transition: all 0.25s ease-in;
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  /* scrollbar-width: none; Firefox */
   overflow: auto;
   scroll-snap-type: x mandatory;
 }
@@ -819,5 +826,55 @@ angle: 30.73 deg */
     border: none;
     background: #ffffff00;
     position: relative;
-    top: -120px;
+    top: -254px;
+    
+}
+
+.prev-btn{
+    right: -1550px;
+}
+
+.next-btn{
+    right: 605px;
+}
+
+.perfect-match{
+    position: absolute;
+    top: 4649px;
+    left: 107px;
+    font-family: GT-Cinetype-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #50735F;
+}
+
+.shop-the-look{
+    position: absolute;
+    top: 4679px;
+    left: 107px;
+    font-family: DidotLTStd-Roman;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #50735F;
+}
+
+.main4-bg{
+    width: 1440px;
+    height: 406px;
+    position: absolute;
+    top: 4990px;
+    background: #D9C7BB;
+    z-index: -1;
+}
+
+.main4-petal{
+    position: absolute;
+    top: 5263.64px;
+    left: 55.9px;
 }
