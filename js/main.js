@@ -234,3 +234,15 @@ hovDot6.addEventListener('mouseenter', function () {
 hovDot6.addEventListener('mouseleave', function () {
     certificates.style.visibility = 'hidden';
 });
+
+let nav = document.querySelector('.nav');
+let dropdownId = 0;
+function dropdownMenu(){
+    if (dropdownId == 0) {
+        nav.style.visibility = 'hidden';
+        dropdownId = 1;
+    }else {
+        nav.style.visibility = 'visible';
+        dropdownId = 0;
+    }
+};
