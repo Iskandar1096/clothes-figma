@@ -52,17 +52,17 @@ table {
 
 @font-face {
     font-family: DidotLTStd-Roman;
-    src: url("/fonts/DidotLTStd-Roman.ttf");
+    src: url("./fonts/DidotLTStd-Roman.ttf");
   }
   
 @font-face {
     font-family: GT-Cinetype-Regular;
-    src: url("/fonts/GT-Cinetype-Regular.ttf");
+    src: url("./fonts/GT-Cinetype-Regular.ttf");
   }
   
 @font-face {
     font-family: Northwell;
-    src: url("/fonts/Northwell.ttf");
+    src: url("./fonts/Northwell.ttf");
   }
 
 
@@ -1298,9 +1298,9 @@ angle: 30.73 deg */
         visibility: hidden;
     }
     .header{
-        width: 390px;
-        background-size: 210% 65%;
-
+        width: 420px;
+        height: 455px;
+        background-size: 210% 455px;
         background-repeat: no-repeat;
     }
     .nav-img{
@@ -1379,5 +1379,148 @@ angle: 30.73 deg */
     }
     .scroll{
         visibility: hidden;
+    }
+    .card1-welcome{
+        top: 500px;
+        left: 25px;
+        font-size: 10px;
+        z-index: 10;
+    }
+    .card1-treehouse {
+        top: 500px;
+        left: 25px;
+        font-size: 20px;
+    }
+    .card1-mindfully{
+        top: 540px;
+        left: 25px;
+        width: 205px;
+        font-size: 10px;
+        z-index: 10;
+    }
+    .card1-buttons {
+        Top: 285px;
+        Left: -180px;
+        z-index: 10;
+    }
+    .read-more{
+        width: 70px;
+        z-index: 10;
+    }
+    .card1-arrow{
+        margin-top: 2px;
+        margin-left: 20px;
+        height: 27px;
+        width: 27px;
+        z-index: 10;
+    }
+    .arrow-img1{
+        margin-top: -7px;
+        margin-left: -3px;
+        width: 16px;
+        height: 16px;
+        z-index: 10;
+    }
+    .leaf{
+        visibility: hidden;
+    }
+    .TreeHouse-img{
+        visibility: hidden;
+    }
+    .child-img-card1{
+        width: 250px;
+        height:275px;
+        top: 560px;
+        left: 160px;
+        z-index: 1;
+    }
+    .leaf-img-card1{
+        width: 180px;
+        height:220px;
+        top: 650px;
+        left: 100px;
+        z-index: 2;
+    }
+    .phone-version-span1{
+        color: #68947b;
+    }
+    .card2-our-care {
+        top: 900px;
+        left: 25px;
+        font-size: 10px;
+        z-index: 10;
+    }
+    .card2-prioritize{
+        top: 920px;
+        left: 25px;
+        font-size: 20px;
+        z-index: 10;
+        width: 200px;
+        line-height: 22px;
+    }
+    .li-card2-h4{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .card2-list{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .li-card2-1{
+        top: 960px;
+        left: 25px;
+        font-size: 20px;
+        z-index: 10;
+    }
+    .li-card2-p{
+        position: absolute;
+        width: 250px;
+        left: 20px;
+    }
+    .li-card2-2{
+        top: 1150px;
+        left: 25px;
+        font-size: 20px;
+        z-index: 10;
+    }
+    .li-card2-3{
+        top: 1310px;
+        left: 25px;
+        font-size: 20px;
+        z-index: 10;
+    }
+    .li-card2-4{
+        top: 1470px;
+        left: 25px;
+        font-size: 20px;
+        z-index: 10;
+    }
+    .card2-list{
+        font-family: Northwell;
+    }
+    .childs-card2{
+        width: 65%;
+        height: 30%;
+        position: absolute;
+        top: 1050px;
+        left: 160px;
+    }
+    .art-girl-card2{
+        visibility: hidden;
+    }
+    .magic-stick{
+        visibility: hidden;
+    }
+    .planet-card2{
+        width: 40%;
+        height: 20%;
+        top: 1580px;
+        left: 200px;
+    }
+    .span1-card2{
+        color: #415e4d;
+    }
+    .span2-card2{
+        color: #68947b;
     }
 }
