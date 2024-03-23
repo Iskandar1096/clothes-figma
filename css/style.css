@@ -1299,8 +1299,8 @@ angle: 30.73 deg */
     }
     .header{
         width: 420px;
-        height: 455px;
-        background-size: 210% 455px;
+        height: 465px;
+        background-size: 210% 465px;
         background-repeat: no-repeat;
     }
     .nav-img{
@@ -1601,5 +1601,9 @@ angle: 30.73 deg */
         height: 45%;
         top: 280px;
         left: 130px;
+    }
+    .arrow2{
+        left: 295px;
+        top: 331px;
     }
 }
