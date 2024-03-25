@@ -246,3 +246,59 @@ function dropdownMenu(){
         dropdownId = 0;
     }
 };
+
+let hoverDotPhone = document.querySelectorAll('.hover-dot-phone')
+
+hoverDotPhone.forEach(element=>{
+    element.addEventListener('click', function() {
+        // console.log(element.classList[1][9])
+        if (element.classList[1][9] == 1) {
+            embroidery.style.visibility = 'visible';
+            color.style.visibility = 'hidden';
+            pocket.style.visibility = 'hidden';
+            buttons.style.visibility = 'hidden';
+            fabrics.style.visibility = 'hidden';
+            certificates.style.visibility = 'hidden';
+        }
+        if (element.classList[1][9] == 2) {
+            embroidery.style.visibility = 'hidden';
+            color.style.visibility = 'visible';
+            pocket.style.visibility = 'hidden';
+            buttons.style.visibility = 'hidden';
+            fabrics.style.visibility = 'hidden';
+            certificates.style.visibility = 'hidden';
+        }
+        if (element.classList[1][9] == 3) {
+            embroidery.style.visibility = 'hidden';
+            color.style.visibility = 'hidden';
+            pocket.style.visibility = 'visible';
+            buttons.style.visibility = 'hidden';
+            fabrics.style.visibility = 'hidden';
+            certificates.style.visibility = 'hidden';
+        }
+        if (element.classList[1][9] == 4) {
+            embroidery.style.visibility = 'hidden';
+            color.style.visibility = 'hidden';
+            pocket.style.visibility = 'hidden';
+            buttons.style.visibility = 'visible';
+            fabrics.style.visibility = 'hidden';
+            certificates.style.visibility = 'hidden';
+        }
+        if (element.classList[1][9] == 5) {
+            embroidery.style.visibility = 'hidden';
+            color.style.visibility = 'hidden';
+            pocket.style.visibility = 'hidden';
+            buttons.style.visibility = 'hidden';
+            fabrics.style.visibility = 'visible';
+            certificates.style.visibility = 'hidden';
+        }
+        if (element.classList[1][9] == 6) {
+            embroidery.style.visibility = 'hidden';
+            color.style.visibility = 'hidden';
+            pocket.style.visibility = 'hidden';
+            buttons.style.visibility = 'hidden';
+            fabrics.style.visibility = 'hidden';
+            certificates.style.visibility = 'visible';
+        }
+    })
+})
