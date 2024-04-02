@@ -1301,10 +1301,28 @@ angle: 30.73 deg */
 .foot-li:first-child{
     margin-top: 36px;
 }
+.dropdown{
+    visibility: hidden;
+}
+.navbar2{
+    visibility: visible;
+}
+.nav-link{
+    color: #fff;
+}
 
-@media (max-width: 425px) and (min-width: 390px) {
+@media (max-width: 600px) and (min-width: 390px) {
     .special-offer {
         visibility: hidden;
+    }
+    .dropdown{
+        visibility: visible;
+    }
+    .navbar2{
+        visibility: hidden;
+    }
+    .nav-link{
+        color: #000;
     }
     .header{
         width: 420px;
@@ -1326,6 +1344,9 @@ angle: 30.73 deg */
     .d-flex p{
         visibility: hidden;
     }
+    .dropdown-menu{
+        background-color: rgba(255, 255, 255, 0.76);
+    }
     /* .dropdown-menu-img{
         visibility:visible;
         width: 30px;
@@ -1344,47 +1365,48 @@ angle: 30.73 deg */
         margin-top: -40px;
     }
     .treehouse{
-        margin: 10px 0px 0px 190px;
+        margin: 30px 0px 0px 20px;
         font-size: 12px;
     }
     .little-clothes{
-        margin: -10px 0px 10px 200px;
+        margin: -10px 0px 10px 20px;
         font-size: 30px;
     }
     .big-impact{
-        margin: -35px 0px 10px 210px;
+        margin: -35px 0px 10px 20px;
         font-size: 30px;
     }
     .hed-par{
-        margin: -10px 0px 10px 130px;
-        font-size: 10px;
-        width: 250px;
+        margin: -10px 0px 10px 20px;
+        font-size: 16px;
+        width: 93%;
     }
     .hed-btn{
         position: absolute;
-        padding: 8px 6px;
-        font-size: 8px;
-        top: 330px;
-        left: 220px;
+        padding: 16px 12px;
+        font-size: 16px;
+        top: 360px;
+        left: 20px;
     }
     .arrow{
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
         position: absolute;
-       left: 276px;
+        top: 0px;
+        left: 0px;
     }
     .arrow-img{
         position: absolute;
-        top: -2px;
+        top: -1px;
         left: 3px;
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
     }
     .buy-good{
         position: absolute;
-        top: 70px;
-        left: 10px;
-        font-size: 10px;
+        top: 35px;
+        left: 270px;
+        font-size: 14px;
     }
     .scroll{
         visibility: hidden;
@@ -1392,25 +1414,45 @@ angle: 30.73 deg */
     .card1-welcome{
         top: 500px;
         left: 25px;
-        font-size: 10px;
+        font-size: 14px;
         z-index: 10;
     }
     .card1-treehouse {
-        top: 500px;
+        top: 505px;
         left: 25px;
-        font-size: 20px;
+        font-size: 26px;
     }
     .card1-mindfully{
-        top: 540px;
+        top: 550px;
         left: 25px;
-        width: 205px;
-        font-size: 10px;
+        font-size: 18px;
         z-index: 10;
+        width: 330px;
+    }
+    .card1-mindfully span{
+        display: inline-block;
+        width: 170px;
     }
     .card1-buttons {
-        Top: 285px;
-        Left: -180px;
+        Top: 335px;
+        Left: 0px;
         z-index: 10;
+    }
+    .card1-buttons .read-more{
+        width: 120px;
+    }
+    .card1-buttons .card1-arrow{
+        width: 55px;
+        height: 55px;
+        top: 360px;
+        left: 122px;
+    }
+    .card1-buttons .card1-arrow img{ 
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        left: 12px;
     }
     .read-more{
         width: 70px;
@@ -1437,42 +1479,34 @@ angle: 30.73 deg */
         visibility: hidden;
     }
     .child-img-card1{
-        width: 250px;
-        height:275px;
-        top: 560px;
-        left: 160px;
-        z-index: 1;
+        visibility: hidden;
     }
     .leaf-img-card1{
         width: 180px;
         height:220px;
-        top: 650px;
-        left: 100px;
+        top: 600px;
+        left: 200px;
         z-index: 2;
-    }
-    .phone-version-span1{
-        color: #68947b;
     }
     .card2-our-care {
         top: 900px;
         left: 25px;
-        font-size: 10px;
-        z-index: 10;
+        font-size: 14px;
+        z-index: 14;
     }
     .card2-prioritize{
         top: 920px;
         left: 25px;
-        font-size: 20px;
+        font-size: 26px;
         z-index: 10;
-        width: 200px;
         line-height: 22px;
     }
     .li-card2-h4{
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
     }
     .card2-list{
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 700;
     }
     .li-card2-1{
@@ -1483,8 +1517,8 @@ angle: 30.73 deg */
     }
     .li-card2-p{
         position: absolute;
-        width: 250px;
         left: 20px;
+        font-size: 18px;
     }
     .li-card2-2{
         top: 1150px;
@@ -1508,11 +1542,7 @@ angle: 30.73 deg */
         font-family: Northwell;
     }
     .childs-card2{
-        width: 65%;
-        height: 30%;
-        position: absolute;
-        top: 1050px;
-        left: 160px;
+        visibility: hidden;
     }
     .art-girl-card2{
         visibility: hidden;
@@ -1523,25 +1553,19 @@ angle: 30.73 deg */
     .planet-card2{
         width: 40%;
         height: 20%;
-        top: 1580px;
-        left: 200px;
-    }
-    .span1-card2{
-        color: #415e4d;
-    }
-    .span2-card2{
-        color: #68947b;
+        top: 1600px;
+        left: 135px;
     }
     .shopping{
-        top: 1780px;
-        left: 100px;
-        font-size: 12px;
+        top: 1820px;
+        left: 130px;
+        font-size: 16px;
     }
     .looking-for{
-        left: 100px;
-        top: 1800px;
-        width: 210px;
-        font-size: 25px;
+        left: -20px;
+        top: 1840px;
+        width: 120%;
+        font-size: 30px;
         line-height: 28px;
         text-align: center;
     }
@@ -1552,16 +1576,16 @@ angle: 30.73 deg */
         height: 25%;
     }
     .ul-main2{
-        left: 0;
+        left: -18px;
         top: 2120px;
         margin-left: 20px;
     }
     .li-main2:last-child{
-        width: 100px;
+        width: 125px;
     }
     .li-main2{
-        font-size: 10px;
-        margin: 10px;
+        font-size: 14px;
+        margin: 5px;
         padding: 5px;
         line-height: 10px;
     }
@@ -1755,8 +1779,8 @@ angle: 30.73 deg */
     }
     .foot{
         left: 0;
-        top: 3700px;
-        height: 300px;
+        top: 3800px;
+        height: 270px;
         margin-bottom: -1000px;
     }
     .footer-leaf{
@@ -1801,5 +1825,57 @@ angle: 30.73 deg */
     }
     .foot-ul1{
         margin-top: -20px;
+    }
+    .dropdown-toggle{
+        width: 40px;
+        height: 30px;
+        position: relative;
+        left: 360px;
+        top: 0px;
+        background: #7979797c;
+    }
+    .dropdown-toggle:active{
+        background: #7979797c;
+    }
+    .dropdown-toggle::after{
+        content: "";
+        border: none;
+        width: 30px;
+        border-top: 2px solid #2b2b2b;
+        border-bottom: 2px solid #2b2b2b;
+        height: 9px;
+        position: absolute;
+        top: 6px;
+        left: 0px;
+    }
+    .dropdown-toggle::before{
+        position: absolute;
+        top: 12px;
+        left: 4px;
+        content: "";
+        border: none;
+        width: 30px;
+        border-bottom: 2px solid #2b2b2b;
+        height: 10px;
+    }
+    .nav-img{
+        position: absolute;
+        width: 25%;
+        height: 190%;
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .shop-now{
+        width: 130px;
+    }
+    .arrow{
+        left: 155px;
+        top: 363px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    .pop-up-hover{
+        font-size: 18px;
     }
 }

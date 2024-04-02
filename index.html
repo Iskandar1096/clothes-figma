@@ -15,8 +15,89 @@
               <p class="hed-p hp1 gt-cin-tr">Get 25% off buying the entire capsule collection</p>
               <p class="hed-p hp2 gt-cin-tr">Subscribe to us and get 15% off your first order</p>
           </div>
-        
-        <nav class="navbar">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            </button>
+            <a class="navbar-brand"> <img src="./img/logo.png" alt=""class="nav-img"></a>
+            <ul class="dropdown-menu">
+              <li class="nav-item gt-cin-tr">
+                      <!-- <a class="" href="#" onclick="openModalWindow">Shop +</a>Кнопка-триггер модального окна -->
+                      <button type="button" class="nav-link btn btn-primary nav-link1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Shop +
+                      </button>
+                      
+                      <!-- Модальное окно -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" style="width: 1440px;">
+                          <div class="modal-content" style="background-color: #50735F;height: 700px; position: relative;">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;margin: 20px 103px;"><img src="./img/shop-logo.png" alt=""></h1>
+                              <div data-bs-theme="dark">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть" ></button>
+                            </div>
+                            </div>
+      
+                            <div class="modal-body">
+                              <ul>
+                                <li onclick="topsShop()">
+                                  <span class="shop-li shop-tops li-shop-val">Tops</span>
+                                  <div class="top-li-shop" style="position: relative;">
+                                    <img src="./img/arrow-right.png" alt="" class="arrow-right-shop arrow-right-shop1">
+                                    <ul class="ul-shop1">
+                                      <li class="text-li-shop li-shop-val">SHIRTS</li>
+                                      <li class="text-li-shop li-shop-val">T-SHIRTS</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li onclick="bottomsShop()">
+                                  <span class="shop-li shop-bottoms li-shop-val">Bottoms</span>
+                                  <div class="bottom-li-shop" style="position: relative;">
+                                    <img src="./img/arrow-right.png" alt="" class="arrow-right-shop arrow-right-shop2">
+                                    <ul  class="ul-shop2">
+                                      <li class="text-li-shop li-shop-val">PANTS</li>
+                                      <li class="text-li-shop li-shop-val">SHORTS</li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li><span class="shop-li li-shop-val shop-roompers">Roompers</span></li>
+                                <li><span class="shop-li li-shop-val shop-hats">Hats</span></li>
+                                <li><span class="shop-li li-shop-val shop-shop-all">Shop all<span class="shop-collections">collections</span></span></li>
+                              </ul>
+                              <p class="delivery-shop">Delivery & return</p>
+                              <p class="contacts-shop">Contacts</p>
+                              <img src="./img/tops-shop.png" alt="" class="img-shop">
+                              <img src="./img/leaf-shop.png" alt="" class="leaf-shop">
+                              <p class="shirts-and-tees">Shirts and tees</p>
+                            </div>
+                            <!-- <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                              <button type="button" class="btn btn-primary">Понял</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item gt-cin-tr">
+                      <a class="nav-link" href="#">Our team</a>
+                    </li>
+                    <li class="nav-item gt-cin-tr">
+                      <a class="nav-link" href="#">Our impact</a>
+                    </li>
+                    <li class="nav-item gt-cin-tr">
+                      <a class="nav-link">Gift card</a>
+                    </li>
+                    <li class="nav-item gt-cin-tr">
+                        <a class="nav-link" href="#">FAQ</a>
+                      </li>
+                      <li class="nav-item gt-cin-tr">
+                        <a class="nav-link" href="#">Journal</a>
+                      </li>
+                      <li class="nav-item gt-cin-tr">
+                        <a class="nav-link">Contacts</a>
+                      </li>
+            </ul>
+          </div>
+        <nav class="navbar navbar2">
           <div class="container-fluid" style="font-size: 14px;background-image: #ffffff00;">
             <a class="navbar-brand"> <img src="./img/logo.png" alt=""class="nav-img"></a>
             <ul class="nav justify-content-center">
@@ -125,7 +206,7 @@
       <div class="card1">
         <h4 class="card1-welcome gt-cin-tr">welcome</h4>
         <h2 class="card1-treehouse lin-did-std">Hi, meet TreeHouse.</h2>
-        <p class="card1-mindfully gt-cin-tr">Mindfully crafted gender-neutral children's clothing focused on your little one <span class="phone-version-span1">and designed</span> with great care for our planet and <span class="phone-version-span1">the people on it.</span></p>
+        <p class="card1-mindfully gt-cin-tr">Mindfully crafted gender-neutral children's clothing focused on your <span class="span1-card1">little oneand designed with great care for our planet andthe people on it.</span></p>
         <div class="card1-buttons">
           <button type="button" class="btn hed-btn read-more gt-cin-tr">READ MORE</button>
           <button type="button" class="btn hed-btn arrow card1-arrow"><img src="./img/arrow-right-2.png" alt="" class="arrow-img1"></button>
@@ -141,7 +222,7 @@
         <div class="list-card2">
           <div class="li-card2-1 li-card2">
             <h4 class="li-card2-h4 gt-cin-tr"><span class="card2-list">1</span> Saving your time </h4>
-            <div class="li-card2-p gt-cin-tr">Each item in our collection seamlessly matches the next. Invest in a few pieces or the enti<span class="span1-card2">re line for a season's</span> worth of clothing <span class="span1-card2">options, designed</span> to last and be loved <span class="span1-card2">by others once</span> your little one has gro<span class="span1-card2">wn.</span></div>
+            <div class="li-card2-p gt-cin-tr">Each item in our collection seamlessly matches the next. Invest in a few pieces or the entire line for a season's worth of clothing options, designed to last and be loved by others once your little one has grown.</div>
           </div>
           <div class="li-card2-2 li-card2">
             <h4 class="li-card2-h4 gt-cin-tr"><span class="card2-list">2</span> Ethical man<span>ufacturing</span></h4>
