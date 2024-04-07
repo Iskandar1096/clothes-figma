@@ -1947,4 +1947,8 @@ angle: 30.73 deg */
         top: 320px;
         left: 125px;
     }
+    body{
+        height: 4070px;
+        width: 450px;
+    }
 }
