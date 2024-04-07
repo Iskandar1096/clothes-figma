@@ -1484,8 +1484,8 @@ angle: 30.73 deg */
     .leaf-img-card1{
         width: 180px;
         height:220px;
-        top: 600px;
-        left: 200px;
+        top: 640px;
+        left: 210px;
         z-index: 2;
     }
     .card2-our-care {
@@ -1667,7 +1667,7 @@ angle: 30.73 deg */
         visibility: hidden;
     }
     .main4-bg{
-        top: 2900px;
+        top: 2860px;
         width: 120%;
         left: 0;
         height: 150px;
@@ -1678,7 +1678,7 @@ angle: 30.73 deg */
     }
     .carousel-view{
         position: absolute;
-        top: 2760px;
+        top: 2715px;
         left: -50px;
     }
     .card-carosel1{
@@ -1921,11 +1921,30 @@ angle: 30.73 deg */
         top: 2660px;
     }
     .perfect-match{
-        top: 2730px;
+        top: 2735px;
         font-size: 16px;
     }
     .shop-the-look{
-        top: 2740px;
+        top: 2745px;
         font-size: 26px;
+    }
+    .trust{
+        top: 3070px;
+    }
+    .transperency{
+        top: 3080px;
+    }
+    .dress-drawing{
+        top: 3155px;
+    }
+    .hover-dot{
+        margin-top: 5px;
+    }
+    .read-more{
+        top: 320px;
+    }
+    .card1-buttons .card1-arrow {
+        top: 320px;
+        left: 125px;
     }
 }
